@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('restore dependencies') {
       steps {
-        sh 'dotnet restore'
+        script {
+          dotnet restore
+        }
+
       }
     }
 
