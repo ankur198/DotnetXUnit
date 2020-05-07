@@ -10,5 +10,11 @@ namespace DotnetXUnit
         {
             Assert.Equal(2, 2);
         }
+
+        [Fact]
+        public void Test2()
+        {
+            Assert.Equal(2, 3);
+        }
     }
 }
