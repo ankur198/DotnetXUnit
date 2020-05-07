@@ -9,13 +9,13 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'dotnet build'
+        bat 'dotnet build'
       }
     }
 
     stage('test') {
       steps {
-        sh 'dotnet test'
+        bat 'dotnet test'
       }
     }
 
